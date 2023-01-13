@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
-  --primary: #bc4123;
-  --secondary: #2b3452;
+  --primary: #886f68;
+  --secondary: #424c55;
+  /* --primary: #db4c40;
+  --secondary: #3c153b; */
 }
 body {
   margin: 0;
@@ -27,8 +29,35 @@ button {
 }
 
 /* navbar */
+header nav {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav h1 {
+  margin-right: auto;
+  border-bottom: 3px solid var(--primary);
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+/* active class is coming from NavLink */
+header nav a.active {
+  background: var(--primary);
+}
 
 /* page content */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+}
 
 /* help layout */
 
