@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
-  --primary: #886f68;
-  --secondary: #424c55;
+  --primary: #f06543;
+  --secondary: #19323c;
   /* --primary: #db4c40;
   --secondary: #3c153b; */
 }
@@ -44,7 +44,6 @@ header nav h1 {
 
 header nav a {
   text-decoration: none;
-  color: white;
   padding: 6px;
   border-radius: 4px;
 }
@@ -73,14 +72,13 @@ main {
   border: 2px solid white;
   border-radius: 4px;
   text-decoration: none;
-  color: white;
 }
 
 .help-layout nav a:hover {
   border-color: var(--primary);
 }
 
-.help-layout nav a:active {
+.help-layout nav a.active {
   background: var(--primary);
 }
 
