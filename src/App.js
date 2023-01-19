@@ -12,12 +12,14 @@ import About from "./pages/About";
 import Faq from "./pages/help/Faq";
 import Contact from "./pages/help/Contact";
 import Careers from "./pages/careers/Careers";
+import CareerDetails from './pages/careers/CareerDetails';
 import NoPage from './pages/NoPage';
 
 //layouts
 import RootLayout from "./layouts/RootLayout";
 import HelpLayout from "./layouts/HelpLayout";
 import CareersLayout from "./layouts/CareersLayout";
+import careerDetailsLoader from './loaderFunctions/careerDetailsLoader';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -33,6 +35,11 @@ const router = createBrowserRouter(
           index 
           element={<Careers />} 
           loader={careersLoader} //runs this function before it loads component element
+        />
+        <Route 
+          path=":id"
+          element={<CareerDetails />} 
+          loader={careerDetailsLoader}
         />
       </Route>
     {/* alternative way to do an error page, * catches all paths not above */}
