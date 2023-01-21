@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom';
+import Breadcrumbs from '../components/Breadcrumbs';
 import Navbar from '../components/Navbar';
 
 
@@ -7,6 +8,7 @@ const RootLayout = () => {
     <div className="root-layout">
       <header>
         <Navbar />
+        <Breadcrumbs />
       </header>
       <main>
         <Outlet />
