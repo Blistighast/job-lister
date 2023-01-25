@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import careersLoader from "./loaderFunctions/careerLoader";
+import contactAction from "./actionFunctions/contactAction";
 
 //pages
 import Home from "./pages/Home";
@@ -29,7 +30,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="help" element={<HelpLayout />}>
         <Route path="faq" element={<Faq />} /> {/* /help/faq */}
-        <Route path="contact" element={<Contact />} />
+        <Route path="contact" element={<Contact />} action={contactAction} />
       </Route>
       <Route
         path="careers"
